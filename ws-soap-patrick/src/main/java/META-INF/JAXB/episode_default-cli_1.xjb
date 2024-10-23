@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 09:37:22 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects/empleado">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects.empleado"/>
+    </schemaBindings>
+    <bindings scd="tns:getEmpleadosRequest">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.GetEmpleadosRequest"/>
+    </bindings>
+    <bindings scd="tns:getEmpleadosResponse">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.GetEmpleadosResponse"/>
+    </bindings>
+    <bindings scd="~tns:empleadows">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.Empleadows"/>
+    </bindings>
+    <bindings scd="tns:getEmpleadoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.GetEmpleadoRequest"/>
+    </bindings>
+    <bindings scd="tns:getEmpleadoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.GetEmpleadoResponse"/>
+    </bindings>
+    <bindings scd="tns:postEmpleadoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.PostEmpleadoRequest"/>
+    </bindings>
+    <bindings scd="tns:postEmpleadoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.empleado.PostEmpleadoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

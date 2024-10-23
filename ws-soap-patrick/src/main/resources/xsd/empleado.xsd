@@ -1,0 +1,62 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects/empleado"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects/empleado"
+           elementFormDefault="qualified">
+    <xs:complexType name="empleadows">
+        <xs:sequence>
+            <xs:element name="id_empleado" type="xs:int"/>
+            <xs:element name="nombre_empleado" type="xs:string"/>
+            <xs:element name="apellido_empleado" type="xs:string"/>
+            <xs:element name="cargo " type="xs:string"/>
+            <xs:element name="salario " type="xs:double"/>
+            <xs:element name="fecha_contratacion" type="xs:date"/>
+        </xs:sequence>
+
+    </xs:complexType>
+    <xs:element name="getEmpleadosRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getEmpleadosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleados"
+                            type="tns:empleadows" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getEmpleadoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getEmpleadoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" type="tns:empleadows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="postEmpleadoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" type="tns:empleadows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postEmpleadoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" type="tns:empleadows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 09:37:50 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects/vehiculos">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects.vehiculos"/>
+    </schemaBindings>
+    <bindings scd="tns:getVehiculosRequest">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.GetVehiculosRequest"/>
+    </bindings>
+    <bindings scd="tns:getVehiculosResponse">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.GetVehiculosResponse"/>
+    </bindings>
+    <bindings scd="~tns:vehiculows">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.Vehiculows"/>
+    </bindings>
+    <bindings scd="tns:getVehiculoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.GetVehiculoRequest"/>
+    </bindings>
+    <bindings scd="tns:getVehiculoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.GetVehiculoResponse"/>
+    </bindings>
+    <bindings scd="tns:postVehiculoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.PostVehiculoRequest"/>
+    </bindings>
+    <bindings scd="tns:postVehiculoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.vehiculos.PostVehiculoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
